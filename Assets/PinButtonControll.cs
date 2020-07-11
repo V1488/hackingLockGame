@@ -34,8 +34,8 @@ public class PinButtonControll : MonoBehaviour
                 myPin.transform.GetComponentInParent<Animation>().Play();
                 if (myPin.GetComponent<PinScript>().pinPosition == MiniGame.GetComponent<UnlockGameScript>().VictoryPinsPositions[myPin.GetComponent<PinScript>().pinNumber] && MiniGame.GetComponent<UnlockGameScript>().HelpPositionsSound == true)
                 {
-                    myPin.GetComponent<AudioSource>().clip = myPin.GetComponent<PinScript>().pinTruePositionSound;
-                    myPin.GetComponent<AudioSource>().Play();
+                    MiniGame.GetComponent<AudioSource>().clip = myPin.GetComponent<PinScript>().pinTruePositionSound;
+                    MiniGame.GetComponent<AudioSource>().Play();
                 }
             }            
         }

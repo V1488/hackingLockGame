@@ -64,35 +64,35 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11174}
     - Class: 114
-      Script: {instanceID: 11456}
+      Script: {instanceID: 11300}
     - Class: 114
-      Script: {instanceID: 11510}
+      Script: {instanceID: 11356}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 12000}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 12172}
+      Script: {instanceID: 11912}
     - Class: 114
-      Script: {instanceID: 12586}
+      Script: {instanceID: 12008}
     - Class: 114
-      Script: {instanceID: 12682}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 12594}
     - Class: 114
-      Script: {instanceID: 13338}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 13630}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 13346}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 13638}
     - Class: 114
-      Script: {instanceID: 30106}
+      Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 33528}
+      Script: {instanceID: 14288}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -136,10 +136,22 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 5898de4a2fc97350290eea99ee61ab6a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RestartAndRerollButton
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 3d920102d009e3ee2c771187a27532b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TreasureScript
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -614,18 +626,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 3d920102d009e3ee2c771187a27532b7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TreasureScript
-  - hash:
-      serializedVersion: 2
-      Hash: 5898de4a2fc97350290eea99ee61ab6a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RestartAndRerollButton
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

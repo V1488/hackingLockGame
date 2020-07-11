@@ -11,6 +11,8 @@ public class UnlockGameScript : MonoBehaviour
     public GameObject AllPins;
     public GameObject Safe;
 
+    public AudioClip VictorySound;
+
     [Range(0, 5)]
     public int[] DefaultPinsPositions = new int [5] { 0, 0, 0, 0, 0 };
 
@@ -81,6 +83,7 @@ public class UnlockGameScript : MonoBehaviour
             if (check >= 5)
             {
                 Victory = true;
+                gameObject.GetComponent<AudioSource>().clip = VictorySound;
                 gameObject.GetComponent<AudioSource>().Play();
                 Safe.SetActive(true);                
             }

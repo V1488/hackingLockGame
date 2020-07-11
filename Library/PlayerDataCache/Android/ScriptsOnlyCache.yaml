@@ -484,7 +484,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 07b7b271a3d6dda76e23b073151f82a1
+      Hash: 5a36184eddb665f5d4376f3b41e9a1e5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UnlockGameScript

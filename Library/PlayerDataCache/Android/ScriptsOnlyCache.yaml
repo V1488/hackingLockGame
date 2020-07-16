@@ -1,12 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ButtonOpenMiniGame
-    - CloseMiniGameButton
+    - ButtonsScript
     - PinButtonControll
     - PinScript
-    - RestartAndRerollButton
-    - TreasureScript
     - UnlockGameScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -30,12 +27,13 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.EventSystems.Physics2DRaycaster
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Mask
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -50,6 +48,8 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 61
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -66,17 +66,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11174}
     - Class: 114
-      Script: {instanceID: 11300}
-    - Class: 114
-      Script: {instanceID: 11356}
-    - Class: 114
       Script: {instanceID: 11464}
     - Class: 114
       Script: {instanceID: 11518}
-    - Class: 114
-      Script: {instanceID: 11912}
-    - Class: 114
-      Script: {instanceID: 12008}
     - Class: 114
       Script: {instanceID: 12180}
     - Class: 114
@@ -86,13 +78,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12880}
     - Class: 114
+      Script: {instanceID: 13248}
+    - Class: 114
       Script: {instanceID: 13346}
     - Class: 114
       Script: {instanceID: 13638}
     - Class: 114
+      Script: {instanceID: 14180}
+    - Class: 114
       Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 14288}
+      Script: {instanceID: 105782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -101,6 +97,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -108,6 +106,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 331
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -136,22 +136,10 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 5898de4a2fc97350290eea99ee61ab6a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RestartAndRerollButton
-  - hash:
-      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 3d920102d009e3ee2c771187a27532b7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TreasureScript
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -286,12 +274,6 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
-      Hash: 23be82095f0bed7aafbe6f3b25d39e22
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ButtonOpenMiniGame
-  - hash:
-      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -370,7 +352,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 7542efb2eabef1a3bd309d3b9314aa89
+      Hash: 1680796c1b81cd55e6b86170762d50be
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PinButtonControll
@@ -484,7 +466,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 5a36184eddb665f5d4376f3b41e9a1e5
+      Hash: dae05a759e431e0be6c3abc1e4064ecc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UnlockGameScript
@@ -604,12 +586,6 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 2c36e880d6386e57d602164b00b5dae5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CloseMiniGameButton
-  - hash:
-      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -626,6 +602,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2d9e12655fbce9014c1f6deb6966d1e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonsScript
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

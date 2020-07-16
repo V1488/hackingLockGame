@@ -63,13 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ButtonOpenMiniGame.cs" />
-    <Compile Include="Assets\CloseMiniGameButton.cs" />
-    <Compile Include="Assets\PinButtonControll.cs" />
-    <Compile Include="Assets\PinScript.cs" />
-    <Compile Include="Assets\RestartAndRerollButton.cs" />
-    <Compile Include="Assets\TreasureScript.cs" />
-    <Compile Include="Assets\UnlockGameScript.cs" />
+    <Compile Include="Assets\Scripts\ButtonsScript.cs" />
+    <Compile Include="Assets\Scripts\PinButtonControll.cs" />
+    <Compile Include="Assets\Scripts\PinScript.cs" />
+    <Compile Include="Assets\Scripts\UnlockGameScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/GitHub/hackingLockGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
